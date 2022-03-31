@@ -1,0 +1,264 @@
+:root {
+    --black-bkg: #222222;
+    /*background-color: var(--black-bkg); */
+    --pink-bkg: #F1E4E6;
+    --pink-color: #F18B99;
+    --sales-bkg: #211616B2;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--black-bkg);
+}
+
+.header__wrp {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+.header__burger {
+    border: none;
+    background-color: transparent;
+}
+
+.header__nav {
+    display: none;
+}
+
+.brand {
+    display: flex;
+}
+
+.brand__img {
+    height: 764px;
+    width: 800px;
+}
+
+.brand__title-wrp {
+    flex-grow: 1;
+    background-color: var(--pink-bkg);
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.brand__title-lower {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    display: block;
+}
+
+.brand__title-pink {
+    color: var(--pink-color);
+}
+
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales__item {
+    height: 260px;
+    width: 360px;
+    background-color: var(--sales-bkg);
+    text-align: center;
+}
+
+.sales__item--women {
+    background-image: url(../img/woman-sales.jpg);
+    margin: 65px 0 0 0;
+}
+
+.sales__item--men {
+    background-image: url(../img/men-sales.jpg);
+    margin: 65px 0 0 0;
+}
+
+.sales__item--kids {
+    background-image: url(../img/kids-sales.jpg);
+    margin: 65px 0 0 0;
+}
+
+.sales__item--accesories {
+    width: 100%;
+    background-image: url(../img/accesories-sales.jpg);
+    margin: 30px 0 96px 0;
+}
+
+.sales__item-text {
+    margin: 105px 0 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.sales__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--pink-color);
+}
+
+.products__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+
+.products__sub-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #9F9F9F;
+    padding-bottom: 48px;
+}
+
+.products__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.products__item {
+    background-color: #F8F8F8;
+    ;
+}
+
+.products__item-title {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #000000;
+    margin: 25px 0 13px 18px;
+}
+
+.products__item-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 0 0 18px 17px;
+    /* text-transform: capitalize; */
+}
+
+.products__item-price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #F16D7F;
+    margin: 0 0 0 19px;
+}
+
+.products__button {
+    margin: 0 auto;
+    display: block;
+    text-transform: capitalize;
+    border: 1px solid #FF6A6A;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #F26376;
+    padding: 15px 39px;
+    margin-top: 49px;
+    margin-bottom: 96px;
+}
+
+.aside {
+    background: #222224;
+}
+
+.aside__list {
+    display: flex;
+    min-height: 341px;
+}
+
+.aside__item-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 32px;
+    width: 45px;
+    left: 389px;
+    margin-top: 103px;
+    margin-bottom: 28px;
+}
+
+.aside__item-title {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-transform: capitalize;
+}
+
+.aside__item-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #FBFBFB;
+    width: 360px;
+}
