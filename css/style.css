@@ -264,18 +264,18 @@ body {
 }
 
 .review {
-    background-image: url(../img/rewiew-bkg.jpg);
+    background-image: url(../img/review-bkg.jpg);
     height: 448px;
     width: 100%;
     background-size: cover;
 }
 
-.rewiew__list {
+.review__list {
     display: flex;
     justify-content: space-between;
 }
 
-.rewiew__item {
+.review__item {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -300,7 +300,7 @@ body {
     font-style: italic;
 }
 
-.rewiew__item-title {
+.review__item-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 40px;
@@ -309,7 +309,7 @@ body {
     margin: 150px 0 0 0;
 }
 
-.rewiew__item-subscribe {
+.review__item-subscribe {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
